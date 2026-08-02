@@ -21,7 +21,7 @@
   <div class="container row">
     <a class="brand" href="index.html">
       <span class="mark">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12L21 4L13 22L11 13L3 12Z" fill="currentColor"/></svg>
+        <img src="assets/logo.png" alt="TubePilot logo" style="width:24px;height:24px;display:block;">
       </span>
       TubePilot
     </a>
@@ -58,28 +58,46 @@
           <div class="ring"></div>
           <div class="ring inner"></div>
           <div class="core">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12L21 4L13 22L11 13L3 12Z" fill="currentColor"/></svg>
+            <img src="assets/logo.png" alt="TubePilot logo" style="width:32px;height:32px;">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About — a plain, explicit statement of what the app does and who it's
-       for. Added specifically so automated reviewers (and human visitors)
-       don't have to infer the app's purpose from marketing copy alone. -->
+  <!-- About — a plain, explicit statement of what the app does, who it's for,
+       and how it uses Google account access. Added specifically so automated
+       reviewers (and human visitors) don't have to infer the app's purpose
+       from marketing copy alone. This is the content shown at the
+       "Application home page" URL used during OAuth verification. -->
   <section class="section" id="about" style="padding-top:0;">
     <div class="container">
       <div class="card" style="max-width:820px;margin:0 auto;padding:32px 36px;">
         <span class="eyebrow">About TubePilot</span>
         <h2 style="font-size:22px;margin-top:10px;">What TubePilot is</h2>
-        <p style="color:var(--text-dim);font-size:15px;margin-bottom:0;">
+        <p style="color:var(--text-dim);font-size:15px;">
           TubePilot is a mobile application, developed and operated by <strong>Bharat Cloud Technologies</strong>,
-          that helps YouTube content creators upload their videos more easily. After a creator connects their own
-          YouTube channel (via Google Sign-In), TubePilot lets them upload a single video, upload several videos in
-          bulk, or connect a Google Drive folder so the app can automatically upload new videos from that folder to
-          their YouTube channel on a daily schedule they choose. TubePilot is built for individual creators and small
-          teams who want to publish consistently without manually uploading every video from a desktop computer.
+          that helps YouTube content creators upload their videos more easily. TubePilot is built for individual
+          creators and small teams who want to publish consistently without manually uploading every video from a
+          desktop computer.
+        </p>
+        <h2 style="font-size:18px;margin-top:22px;">How TubePilot works</h2>
+        <p style="color:var(--text-dim);font-size:15px;">
+          A creator signs in with their own Google Account and connects their own YouTube channel. Once connected,
+          TubePilot lets them:
+        </p>
+        <ul style="color:var(--text-dim);font-size:15px;padding-left:20px;margin:8px 0;">
+          <li>Upload a single video, or several videos in bulk, directly to their YouTube channel from their phone.</li>
+          <li>Optionally connect a folder in their own Google Drive, so TubePilot can automatically pick up new
+              videos from that folder and upload them to their YouTube channel on a daily schedule the creator sets.</li>
+          <li>Set the privacy (public, unlisted, or private) and scheduled publish time for each upload.</li>
+        </ul>
+        <h2 style="font-size:18px;margin-top:22px;">Why TubePilot requests Google account access</h2>
+        <p style="color:var(--text-dim);font-size:15px;margin-bottom:0;">
+          TubePilot only accesses the creator's own YouTube channel (to upload and manage their videos) and, only if
+          the creator chooses to enable the auto-upload feature, their own selected Google Drive folder (to read
+          video files the creator has placed there). TubePilot does not access any other Google account data, and
+          does not access other users' channels, videos, or Drive files.
         </p>
       </div>
     </div>
@@ -162,7 +180,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" href="index.html" style="margin-bottom:10px;">
-          <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12L21 4L13 22L11 13L3 12Z" fill="currentColor"/></svg></span>
+          <span class="mark"><img src="assets/logo.png" alt="TubePilot logo" style="width:24px;height:24px;display:block;"></span>
           TubePilot
         </a>
         <p>Schedule, bulk-upload, and auto-upload to YouTube — built for creators who'd rather be creating.</p>
