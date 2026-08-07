@@ -1,5 +1,5 @@
 // TubePilot site — shared behaviour: mobile nav, scrollspy for legal pages,
-// back-to-top button, and auto-updating footer year.
+// back-to-top button, auto-updating footer year, and FAQ accordion.
 document.addEventListener('DOMContentLoaded', function () {
   // ---- Mobile nav toggle ----
   var toggle = document.querySelector('.nav-toggle');
@@ -31,6 +31,28 @@ document.addEventListener('DOMContentLoaded', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+
+  // ---- FAQ Accordion ----
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    var question = item.querySelector('.faq-question');
+    if (question) {
+      question.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        // Close all others (optional — remove this loop for multi-open)
+        faqItems.forEach(function (otherItem) {
+          if (otherItem !== item) {
+            otherItem.classList.remove('open');
+            var otherQ = otherItem.querySelector('.faq-question');
+            if (otherQ) otherQ.setAttribute('aria-expanded', 'false');
+          }
+        });
+        // Toggle current
+        item.classList.toggle('open', !isOpen);
+        question.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    }
+  });
 
   // ---- Scrollspy for legal-page table of contents ----
   var tocLinks = document.querySelectorAll('.toc a');
