@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.tubepilot.shop/sitemap.xml
