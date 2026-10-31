@@ -1,15 +1,67 @@
 <!doctype html>
-
 <html lang="en">
-<head>
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#64135f"><link rel="icon" href="assets/icon.png"><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><title>TubePilot — AI-Powered YouTube Creator OS</title><meta name="description" content="TubePilot brings AI ideas, titles, descriptions, hashtags, YouTube SEO, video upload, smart scheduling and analytics into one creator workflow."><link rel="canonical" href="https://www.tubepilot.shop/"><meta property="og:type" content="website">
+<meta name="theme-color" content="#64135f">
+<meta name="application-name" content="TubePilot">
+
+<!-- FAVICONS & LOGO FIX - AB GOOGLE LOGO UTHAYEGA -->
+<link rel="icon" type="image/png" href="https://www.tubepilot.shop/assets/logo.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="https://www.tubepilot.shop/assets/logo.png">
+<link rel="shortcut icon" href="https://www.tubepilot.shop/assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="/manifest.json">
+
+<title>TubePilot — AI-Powered YouTube Creator OS</title>
+<meta name="description" content="TubePilot is an AI-powered YouTube Creator OS. CREATE, OPTIMIZE, SCHEDULE, GROW - AI ideas, titles, descriptions, hashtags, SEO, video upload, smart scheduling and analytics in one workflow.">
+
+<link rel="canonical" href="https://www.tubepilot.shop/">
+
+<!-- OG TAGS FIX -->
+<meta property="og:type" content="website">
 <meta property="og:title" content="TubePilot — AI-Powered YouTube Creator OS">
-<meta property="og:description" content="Create, optimize, schedule and grow your YouTube channel with TubePilot.">
+<meta property="og:description" content="Create, optimize, schedule and grow your YouTube channel with TubePilot. Official website tubepilot.shop">
 <meta property="og:url" content="https://www.tubepilot.shop/">
-<meta property="og:image" content="https://www.tubepilot.shop/assets/logo.png"><!-- TUBEPILOT STRUCTURED DATA --><script type="application/ld+json">
+<meta property="og:image" content="https://www.tubepilot.shop/assets/logo.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:site_name" content="TubePilot">
+<meta property="og:logo" content="https://www.tubepilot.shop/assets/logo.png">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TubePilot — AI-Powered YouTube Creator OS">
+<meta name="twitter:description" content="AI-powered YouTube Creator OS by Anik Kumar">
+<meta name="twitter:image" content="https://www.tubepilot.shop/assets/logo.png">
+
+<!-- TUBEPILOT STRUCTURED DATA - FIXED FOR GOOGLE + AI -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -21,13 +73,23 @@
       "logo": {
         "@type": "ImageObject",
         "@id": "https://www.tubepilot.shop/#logo",
-        "url": "https://www.tubepilot.shop/assets/logo.png"
+        "url": "https://www.tubepilot.shop/assets/logo.png",
+        "width": 512,
+        "height": 512,
+        "caption": "TubePilot Logo"
       },
+      "image": "https://www.tubepilot.shop/assets/logo.png",
       "email": "support@tubepilot.shop",
       "description": "TubePilot is an AI-powered YouTube Creator OS for content ideation, optimization, video upload, scheduling and analytics.",
       "founder": {
-        "@id": "https://www.tubepilot.shop/founder.html#person"
-      }
+        "@type": "Person",
+        "name": "Anik Kumar",
+        "url": "https://www.tubepilot.shop/founder.html"
+      },
+      "sameAs": [
+        "https://www.tubepilot.shop/",
+        "https://play.google.com/store/apps/details?id=com.tubepilot.app"
+      ]
     },
     {
       "@type": "WebSite",
@@ -43,13 +105,25 @@
       "@type": "SoftwareApplication",
       "@id": "https://www.tubepilot.shop/#software",
       "name": "TubePilot",
+      "alternateName": "TubePilot - AI YouTube Creator OS",
       "url": "https://www.tubepilot.shop/",
-      "description": "TubePilot is an AI-powered YouTube Creator OS that helps creators plan content, generate titles and descriptions, optimize videos, upload and schedule publishing, and review performance.",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.tubepilot.app",
+      "description": "TubePilot is an AI-powered YouTube Creator OS that helps creators plan content, generate titles and descriptions, optimize videos, upload and schedule publishing, and review performance. Official App by Anik Kumar.",
       "applicationCategory": "MultimediaApplication",
       "operatingSystem": "Android",
       "image": "https://www.tubepilot.shop/assets/logo.png",
+      "screenshot": "https://www.tubepilot.shop/assets/screenshot-3.png",
+      "author": {
+        "@type": "Person",
+        "name": "Anik Kumar"
+      },
       "publisher": {
         "@id": "https://www.tubepilot.shop/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
       },
       "featureList": [
         "AI Video Ideas",
@@ -68,7 +142,11 @@
     }
   ]
 }
-</script></head><body><!-- HEADER --><header class="site-header">
+</script>
+</head>
+<body>
+<!-- HEADER -->
+<header class="site-header">
 <div class="container row"><a class="brand" href="index.html">
 <span class="mark">
 <img src="assets/logo.png" alt="TubePilot logo">
@@ -94,7 +172,7 @@ Build better videos.<br>
 </h1><p class="lead">
 TubePilot is an AI-powered YouTube Creator OS that helps creators move from an idea to an optimized, scheduled and published video — then understand performance.
 </p><div class="hero-cta">
-<a class="btn btn-primary btn-lg" href="contact.html">Get in touch</a>
+<a class="btn btn-primary btn-lg" href="https://play.google.com/store/apps/details?id=com.tubepilot.app" target="_blank">Download App</a>
 <a class="btn btn-outline btn-lg" href="#features">Explore features</a>
 </div><div class="tp-pills">
 <span>CREATE</span>
@@ -102,7 +180,7 @@ TubePilot is an AI-powered YouTube Creator OS that helps creators move from an i
 <span>SCHEDULE</span>
 <span>GROW</span>
 </div><p class="hero-note">
-Built for YouTube creators · AI-assisted workflow · Creator-first tools
+Official Website: tubepilot.shop | Official App by Anik Kumar
 </p>
 </div><div class="tp-hero-visual">
 <img src="assets/screenshot-3.png" alt="TubePilot creator dashboard app screen"><p class="tp-note" style="margin:14px 4px 0">
@@ -212,10 +290,9 @@ Package prices and feature entitlements may change. The app's live Diamond Store
 <img src="assets/logo.png" alt="TubePilot logo">
 </div><div>
 <span class="eyebrow">The people behind the product</span><h2>Built with a creator-first vision</h2><p>
-TubePilot is being developed to bring the essential YouTube creator workflow into one connected platform. Learn about the product and its founder.
+TubePilot is being developed to bring the essential YouTube creator workflow into one connected platform. Learn about the product and its founder Anik Kumar.
 </p><a class="btn btn-outline" href="founder.html">Meet the founder</a>
 <a class="btn btn-outline" href="about.html">About TubePilot</a>
-
 </div>
 </div>
 </section><!-- FAQ SECTION --><section class="section" id="faq">
@@ -243,7 +320,7 @@ support@tubepilot.shop
 </span>
 TubePilot
 </a><p>
-AI-powered tools for the YouTube creator workflow. Create, optimize, schedule and grow.
+AI-powered tools for the YouTube creator workflow. Create, optimize, schedule and grow. Official App: <a href="https://play.google.com/store/apps/details?id=com.tubepilot.app">Play Store</a>
 </p>
 </div><div class="footer-col">
 <p class="label">Explore</p><a href="about.html">About TubePilot</a>
@@ -253,22 +330,19 @@ AI-powered tools for the YouTube creator workflow. Create, optimize, schedule an
 <a href="mcp.html">MCP</a>
 <a href="docs.html">Documentation</a>
 <a href="blog.html">Blog</a>
-
 </div><div class="footer-col">
 <p class="label">Policies & Support</p><a href="contact.html">Contact</a>
 <a href="privacy.html">Privacy Policy</a>
 <a href="terms.html">Terms</a>
 <a href="refund.html">Refund Policy</a>
 <a href="delete-account.html">Delete Account</a>
-
 </div></div><div class="container footer-bottom">
 <span>
-© <span data-year>2026</span> TubePilot. All rights reserved.
+© <span data-year>2026</span> TubePilot by Anik Kumar. All rights reserved.
 </span><span>
-Made in India ·
+Made in India · Official: tubepilot.shop ·
 <a href="mailto:support@tubepilot.shop">support@tubepilot.shop</a>
 </span>
 </div></footer><button class="to-top" aria-label="Back to top">↑</button>
-
-<script src="js/script.js"></script></body>
+<script src="js/script.js"></script><script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
 </html>
