@@ -1,1 +1,342 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#64135f"><link rel="icon" href="assets/icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><title>TubePilot MCP | TubePilot</title><meta name="description" content="Understand TubePilot Model Context Protocol (MCP), its planned AI assistant integrations, permissions and compatibility requirements."><link rel="canonical" href="https://www.tubepilot.shop/mcp.html"></head><body><header class="site-header"><div class="container row"><a class="brand" href="index.html"><span class="mark"><img src="assets/logo.png" alt="TubePilot logo"></span>TubePilot</a><nav class="nav-links" id="nav-links"><a href="index.html#features">Features</a><a href="index.html#how-it-works">How it works</a><a href="about.html">About</a><a href="founder.html">Founder</a><a href="mcp.html">MCP</a><a href="index.html#pricing">Pricing</a><a href="contact.html" class="nav-cta">Contact</a></nav><button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button></div></header><main><section class="tp-page-hero"><div class="container"><span class="eyebrow">AI & agent integration</span><h1>Connect compatible AI workflows with TubePilot</h1><p class="meta">TubePilot · Create · Optimize · Schedule · Grow</p></div></section><section class="section"><div class="container tp-content"><p>TubePilot's own Model Context Protocol (MCP) layer is designed to provide a structured integration path for compatible AI assistants and agents to interact with supported TubePilot capabilities.</p><h2>What MCP is intended to enable</h2><ul><li>Connect compatible AI clients where their MCP connection method supports the required server transport and authentication.</li><li>Expose implemented and documented TubePilot tools for eligible creator workflows.</li><li>Use authentication, least-privilege permissions and input validation.</li><li>Provide setup guidance, connection status, diagnostics and access revocation.</li></ul><h2>Compatibility and availability</h2><p>MCP does not mean every AI product can connect automatically or with one click. Compatibility depends on client support, server transport, authentication and the operations actually implemented in the production MCP server.</p><p>Publishing, schedule changes and other consequential actions should use appropriate permission checks and confirmation steps. Do not assume an action is available unless it is listed in the current technical documentation.</p><p class="tp-note">This page describes the product's MCP direction. Exact tool names, schemas, authentication details and live availability must be confirmed against current technical documentation before being advertised as operational.</p></div></section></main><footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><span class="mark"><img src="assets/logo.png" alt="TubePilot logo"></span>TubePilot</a><p>AI-powered tools for the YouTube creator workflow. Create, optimize, schedule and grow.</p></div><div class="footer-col"><p class="label">Explore</p><a href="about.html">About TubePilot</a><a href="founder.html">Founder</a><a href="features.html">Features</a><a href="mcp.html">MCP</a><a href="docs.html">Documentation</a><a href="blog.html">Blog</a></div><div class="footer-col"><p class="label">Policies & Support</p><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="refund.html">Refund Policy</a><a href="delete-account.html">Delete Account</a></div></div><div class="container footer-bottom"><span>© <span data-year>2026</span> TubePilot. All rights reserved.</span><span>Made in India · <a href="mailto:support@tubepilot.shop">support@tubepilot.shop</a></span></div></footer><button class="to-top" aria-label="Back to top">↑</button><script src="js/script.js"></script></body></html>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#64135f">  <link rel="icon" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">  <title>TubePilot MCP | Model Context Protocol for YouTube Creator Workflows</title><meta
+name="description"
+content="Explore TubePilot MCP (Model Context Protocol), its purpose, supported AI-agent workflows, compatibility requirements, authentication and permission considerations."
+
+«»
+
+  <meta name="author" content="Anik Kumar">
+  <meta name="robots" content="index, follow, max-image-preview:large">  <link rel="canonical" href="https://www.tubepilot.shop/mcp.html">  <meta property="og:type" content="website">
+  <meta property="og:title" content="TubePilot MCP | AI-Agent Integration">
+  <meta
+    property="og:description"
+    content="Learn how TubePilot MCP is designed to connect compatible AI assistants and agents with supported YouTube creator workflows."
+  >
+  <meta property="og:url" content="https://www.tubepilot.shop/mcp.html">
+  <meta property="og:site_name" content="TubePilot">
+  <meta property="og:image" content="https://www.tubepilot.shop/assets/logo.png">  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TubePilot MCP">
+  <meta
+    name="twitter:description"
+    content="Explore the Model Context Protocol integration direction of TubePilot."
+  >
+  <meta name="twitter:image" content="https://www.tubepilot.shop/assets/logo.png">  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.tubepilot.shop/#organization",
+        "name": "TubePilot",
+        "url": "https://www.tubepilot.shop/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.tubepilot.shop/assets/logo.png"
+        },
+        "email": "support@tubepilot.shop"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.tubepilot.shop/#website",
+        "url": "https://www.tubepilot.shop/",
+        "name": "TubePilot",
+        "publisher": {
+          "@id": "https://www.tubepilot.shop/#organization"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.tubepilot.shop/mcp.html#webpage",
+        "url": "https://www.tubepilot.shop/mcp.html",
+        "name": "TubePilot MCP",
+        "description": "Information about TubePilot's Model Context Protocol integration direction, supported AI-agent workflows and compatibility considerations.",
+        "isPartOf": {
+          "@id": "https://www.tubepilot.shop/#website"
+        },
+        "about": {
+          "@id": "https://www.tubepilot.shop/#organization"
+        },
+        "publisher": {
+          "@id": "https://www.tubepilot.shop/#organization"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.tubepilot.shop/mcp.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.tubepilot.shop/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "TubePilot MCP",
+            "item": "https://www.tubepilot.shop/mcp.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script></head><body><header class="site-header">
+  <div class="container row"><a class="brand" href="index.html">
+  <span class="mark">
+    <img src="assets/logo.png" alt="TubePilot logo">
+  </span>
+  TubePilot
+</a>
+
+<nav class="nav-links" id="nav-links">
+  <a href="index.html#features">Features</a>
+  <a href="index.html#how-it-works">How it works</a>
+  <a href="about.html">About</a>
+  <a href="founder.html">Founder</a>
+  <a href="mcp.html" aria-current="page">MCP</a>
+  <a href="faq.html">FAQ</a>
+  <a href="index.html#pricing">Pricing</a>
+  <a href="contact.html" class="nav-cta">Contact</a>
+</nav>
+
+<button
+  class="nav-toggle"
+  aria-label="Toggle menu"
+  aria-expanded="false"
+  aria-controls="nav-links"
+>
+  <span></span>
+</button>
+
+  </div>
+</header><main id="main-content">  <section class="tp-page-hero">
+    <div class="container">  <span class="eyebrow">AI &amp; Agent Integration</span>
+
+  <h1>TubePilot MCP — Connect Compatible AI Workflows</h1>
+
+  <p class="meta">
+    TubePilot · Model Context Protocol · YouTube Creator Workflows
+  </p>
+
+</div>
+
+  </section>  <section class="section">
+    <div class="container tp-content">  <p>
+    <strong>TubePilot MCP</strong> refers to TubePilot's
+    Model Context Protocol integration layer. It is designed
+    to provide a structured way for compatible AI assistants
+    and agents to interact with supported TubePilot capabilities.
+  </p>
+
+  <p>
+    The goal is to make supported YouTube creator workflows
+    accessible through compatible AI-agent environments,
+    subject to the actual tools, authentication methods and
+    permissions implemented by TubePilot.
+  </p>
+
+  <h2>What is Model Context Protocol (MCP)?</h2>
+
+  <p>
+    Model Context Protocol (MCP) is a protocol designed to help
+    AI applications connect with external tools and data sources
+    through a structured interface.
+  </p>
+
+  <p>
+    An MCP-compatible client can communicate with an MCP server
+    when both sides support compatible connection methods and
+    the required authentication and configuration.
+  </p>
+
+  <h2>What TubePilot MCP is intended to enable</h2>
+
+  <ul>
+    <li>
+      Connect compatible AI clients where their MCP connection
+      method supports the required server transport and authentication.
+    </li>
+
+    <li>
+      Make implemented and documented TubePilot tools accessible
+      to eligible AI-agent workflows.
+    </li>
+
+    <li>
+      Support structured interactions with available creator tools.
+    </li>
+
+    <li>
+      Apply authentication, input validation and appropriate
+      permission checks.
+    </li>
+
+    <li>
+      Provide setup guidance and connection diagnostics where
+      supported by the implementation.
+    </li>
+  </ul>
+
+  <h2>How TubePilot MCP fits into the creator workflow</h2>
+
+  <p>
+    TubePilot is an AI-powered YouTube Creator OS focused on
+    content ideation, video optimization, publishing workflows
+    and channel insights.
+  </p>
+
+  <p>
+    Its MCP integration direction is intended to connect
+    compatible AI-agent environments with supported parts
+    of this creator workflow.
+  </p>
+
+  <p>
+    The actual tasks an AI agent can perform depend on the
+    tools currently implemented and enabled in the production
+    MCP server.
+  </p>
+
+  <h2>Compatibility and availability</h2>
+
+  <p>
+    MCP compatibility does not mean every AI assistant can
+    connect automatically or through a one-click setup.
+    Compatibility depends on factors such as:
+  </p>
+
+  <ul>
+    <li>Whether the AI client supports MCP.</li>
+    <li>Supported server transport and connection configuration.</li>
+    <li>Authentication and account eligibility requirements.</li>
+    <li>Permissions granted to the connected client.</li>
+    <li>The tools and operations actually available in TubePilot MCP.</li>
+  </ul>
+
+  <h2>Security and permissions</h2>
+
+  <p>
+    AI-agent access to creator tools should be controlled carefully.
+    Authentication, least-privilege access, input validation and
+    appropriate permission checks are important considerations.
+  </p>
+
+  <p>
+    Publishing videos, changing schedules and other consequential
+    actions should follow the authorization and confirmation
+    requirements of the relevant implementation.
+  </p>
+
+  <p>
+    Never share passwords, private API keys or access tokens
+    in public messages or documentation.
+  </p>
+
+  <h2>Technical documentation</h2>
+
+  <p>
+    Exact MCP tool names, input schemas, server transport,
+    authentication procedures and supported operations should
+    be taken from the current TubePilot technical documentation.
+  </p>
+
+  <p>
+    Do not assume that an operation is available merely because
+    it is part of the broader TubePilot product direction.
+  </p>
+
+  <h2>About TubePilot</h2>
+
+  <p>
+    TubePilot is an AI-powered YouTube Creator OS founded by
+    <strong>Anik Kumar</strong>. Its product principle is:
+  </p>
+
+  <p>
+    <strong>CREATE · OPTIMIZE · SCHEDULE · GROW</strong>
+  </p>
+
+  <p>
+    Learn more about the platform on the
+    <a href="about.html">About TubePilot page</a>,
+    meet the <a href="founder.html">founder</a>,
+    or explore the <a href="faq.html">frequently asked questions</a>.
+  </p>
+
+  <h2>Contact and support</h2>
+
+  <p>
+    For questions about TubePilot and its supported integrations,
+    contact:
+    <a href="mailto:support@tubepilot.shop">support@tubepilot.shop</a>.
+  </p>
+
+  <p class="tp-note">
+    This page describes TubePilot's MCP integration direction.
+    Exact tool availability, schemas, authentication details and
+    production capabilities must be confirmed against current
+    technical documentation. Compatibility may vary by AI client
+    and implementation.
+  </p>
+
+</div>
+
+  </section></main><footer class="site-footer">
+  <div class="container footer-grid"><div class="footer-brand">
+  <a class="brand" href="index.html">
+    <span class="mark">
+      <img src="assets/logo.png" alt="TubePilot logo">
+    </span>
+    TubePilot
+  </a>
+
+  <p>
+    AI-powered tools for the YouTube creator workflow.
+    Create, optimize, schedule and grow.
+  </p>
+</div>
+
+<div class="footer-col">
+  <p class="label">Explore</p>
+  <a href="about.html">About TubePilot</a>
+  <a href="founder.html">Founder</a>
+  <a href="features.html">Features</a>
+  <a href="mcp.html">MCP</a>
+  <a href="docs.html">Documentation</a>
+  <a href="blog.html">Blog</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<div class="footer-col">
+  <p class="label">Policies &amp; Support</p>
+  <a href="contact.html">Contact</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms</a>
+  <a href="refund.html">Refund Policy</a>
+  <a href="delete-account.html">Delete Account</a>
+</div>
+
+  </div>  <div class="container footer-bottom">
+    <span>
+      © <span data-year>2026</span> TubePilot. All rights reserved.
+    </span><span>
+  Made in India ·
+  <a href="mailto:support@tubepilot.shop">support@tubepilot.shop</a>
+</span>
+
+  </div>
+</footer><button class="to-top" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script></body>
+</html>
