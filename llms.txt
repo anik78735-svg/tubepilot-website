@@ -1,0 +1,52 @@
+# TubePilot
+
+> TubePilot is an AI-powered YouTube Creator OS designed to help YouTube creators create, optimize, schedule, and grow their content.
+
+Official Website: https://www.tubepilot.shop/
+
+## About TubePilot
+
+TubePilot is a platform built specifically for YouTube creators. It brings AI-powered content creation, video optimization, scheduling, and channel insights into one platform.
+
+## Core Features
+
+- AI Video Ideas: Generate content ideas for YouTube videos.
+- AI Title Generator: Generate engaging YouTube video titles.
+- AI Description Generator: Create YouTube video descriptions.
+- Hashtag Tools: Help creators with relevant hashtags.
+- SEO Optimizer: Optimize YouTube video content for search.
+- Tags and Metadata: Improve video metadata.
+- Thumbnail Workflow: Support thumbnail creation workflows.
+- Visual Analyzer: Analyze visual content.
+- Video Upload: Upload videos through TubePilot.
+- Smart Scheduling: Schedule YouTube videos.
+- Video Analytics: Understand video performance.
+- Channel Audit: Review YouTube channel performance.
+- Competitor Radar: Explore competitor-related insights.
+- TubePilot MCP: Explore TubePilot's MCP-related integration.
+
+## Who Is It For?
+
+TubePilot is designed for:
+- YouTube creators
+- Content creators
+- YouTube beginners
+- YouTube channel owners
+- Creator teams
+
+## Founder
+
+Founder: Anik Kumar
+
+TubePilot was founded by Anik Kumar.
+
+Founder Page:
+https://www.tubepilot.shop/founder.html
+
+## Frequently Asked Questions
+
+https://www.tubepilot.shop/faq.html
+
+## Official Website
+
+https://www.tubepilot.shop/
