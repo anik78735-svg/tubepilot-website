@@ -4,34 +4,71 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#64135f"><link rel="icon" href="assets/icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="theme-color" content="#64135f"><link rel="icon" href="assets/icon.png"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><title>TubePilot — AI-Powered YouTube Creator OS</title><meta name="description" content="TubePilot brings AI ideas, titles, descriptions, hashtags, YouTube SEO, video upload, smart scheduling and analytics into one creator workflow."><link rel="canonical" href="https://www.tubepilot.shop/"><meta property="og:type" content="website">
 <meta property="og:title" content="TubePilot — AI-Powered YouTube Creator OS">
 <meta property="og:description" content="Create, optimize, schedule and grow your YouTube channel with TubePilot.">
 <meta property="og:url" content="https://www.tubepilot.shop/">
-<meta property="og:image" content="https://www.tubepilot.shop/assets/logo.png"><script type="application/ld+json">
+<meta property="og:image" content="https://www.tubepilot.shop/assets/logo.png"><!-- TUBEPILOT STRUCTURED DATA --><script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "@id":"https://www.tubepilot.shop/#organization",
-  "name":"TubePilot",
-  "url":"https://www.tubepilot.shop/",
-  "logo":"https://www.tubepilot.shop/assets/logo.png",
-  "email":"support@tubepilot.shop",
-  "description":"An AI-powered YouTube Creator OS for content ideation, optimization, upload, scheduling and analytics."
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.tubepilot.shop/#organization",
+      "name": "TubePilot",
+      "url": "https://www.tubepilot.shop/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.tubepilot.shop/#logo",
+        "url": "https://www.tubepilot.shop/assets/logo.png"
+      },
+      "email": "support@tubepilot.shop",
+      "description": "TubePilot is an AI-powered YouTube Creator OS for content ideation, optimization, video upload, scheduling and analytics.",
+      "founder": {
+        "@id": "https://www.tubepilot.shop/founder.html#person"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tubepilot.shop/#website",
+      "name": "TubePilot",
+      "url": "https://www.tubepilot.shop/",
+      "publisher": {
+        "@id": "https://www.tubepilot.shop/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.tubepilot.shop/#software",
+      "name": "TubePilot",
+      "url": "https://www.tubepilot.shop/",
+      "description": "TubePilot is an AI-powered YouTube Creator OS that helps creators plan content, generate titles and descriptions, optimize videos, upload and schedule publishing, and review performance.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Android",
+      "image": "https://www.tubepilot.shop/assets/logo.png",
+      "publisher": {
+        "@id": "https://www.tubepilot.shop/#organization"
+      },
+      "featureList": [
+        "AI Video Ideas",
+        "AI Title Generation",
+        "AI Description Generation",
+        "Hashtags and Metadata",
+        "YouTube SEO Optimization",
+        "Thumbnail and Visual Workflow",
+        "Video Upload",
+        "Smart Scheduling",
+        "Video Analytics",
+        "YouTube Channel Audit",
+        "Competitor Radar",
+        "TubePilot MCP"
+      ]
+    }
+  ]
 }
-</script><script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebSite",
-  "name":"TubePilot",
-  "url":"https://www.tubepilot.shop/",
-  "publisher":{
-    "@id":"https://www.tubepilot.shop/#organization"
-  }
-}
-</script></head><body><header class="site-header">
+</script></head><body><!-- HEADER --><header class="site-header">
 <div class="container row"><a class="brand" href="index.html">
 <span class="mark">
 <img src="assets/logo.png" alt="TubePilot logo">
@@ -50,9 +87,8 @@ TubePilot
 <span></span>
 </button></div>
 </header><main><!-- HERO SECTION --><section class="hero">
-<div class="container tp-hero-layout"><div><span class="eyebrow">Your YouTube creator workflow, in one place</span>
-
-<h1>
+<div class="container tp-hero-layout"><div>
+<span class="eyebrow">Your YouTube creator workflow, in one place</span><h1>
 Build better videos.<br>
 <span class="accent">Grow with intention.</span>
 </h1><p class="lead">
@@ -67,14 +103,16 @@ TubePilot is an AI-powered YouTube Creator OS that helps creators move from an i
 <span>GROW</span>
 </div><p class="hero-note">
 Built for YouTube creators · AI-assisted workflow · Creator-first tools
-</p></div><div class="tp-hero-visual"><img src="assets/screenshot-3.png" alt="TubePilot creator dashboard app screen"><p class="tp-note" style="margin:14px 4px 0">
+</p>
+</div><div class="tp-hero-visual">
+<img src="assets/screenshot-3.png" alt="TubePilot creator dashboard app screen"><p class="tp-note" style="margin:14px 4px 0">
 Plan, prepare and manage your YouTube publishing workflow with TubePilot.
-</p></div></div>
+</p>
+</div></div>
 </section><!-- FEATURES SECTION --><section class="section" id="features">
 <div class="container"><div class="section-head">
 <span class="eyebrow">One connected workflow</span>
-<h2>Everything around your next YouTube video</h2>
-<p>
+<h2>Everything around your next YouTube video</h2><p>
 Spend less time switching between tasks and more time creating content your audience wants to watch.
 </p>
 </div><div class="tp-grid"><article class="tp-card">
@@ -154,54 +192,61 @@ Spend less time switching between tasks and more time creating content your audi
 </article></div>
 </div>
 </section><!-- PRICING --><section class="tp-band" id="pricing">
-<div class="container tp-hero-layout"><div><span class="eyebrow" style="color:#e8c9e7">
+<div class="container tp-hero-layout"><div>
+<span class="eyebrow" style="color:#e8c9e7">
 Creator-first pricing
 </span><h2>Start small. Create more.</h2><p>
 TubePilot includes a Diamond Store with multiple credit packages. Package balances and entitlements are displayed in the app; check the live app for current availability and pricing.
 </p><a class="btn btn-outline btn-lg" href="contact.html">
 Pricing & support
-</a></div><div><h3>Built around your workflow</h3><p>
+</a>
+</div><div>
+<h3>Built around your workflow</h3><p>
 AI title generation · AI descriptions · AI hashtags · Video SEO optimizer · Thumbnail prompts · Instant Diamond credit, subject to the package selected.
 </p><p class="tp-note" style="color:#e8dbe8">
 Package prices and feature entitlements may change. The app's live Diamond Store is the source of truth.
-</p></div></div>
+</p>
+</div></div>
 </section><!-- FOUNDER SECTION --><section class="section">
 <div class="container tp-founder"><div class="tp-founder-mark">
 <img src="assets/logo.png" alt="TubePilot logo">
-</div><div><span class="eyebrow">The people behind the product</span>
-
-<h2>Built with a creator-first vision</h2><p>
+</div><div>
+<span class="eyebrow">The people behind the product</span><h2>Built with a creator-first vision</h2><p>
 TubePilot is being developed to bring the essential YouTube creator workflow into one connected platform. Learn about the product and its founder.
 </p><a class="btn btn-outline" href="founder.html">Meet the founder</a>
-
 <a class="btn btn-outline" href="about.html">About TubePilot</a>
 
-</div></div>
-</section><!-- FAQ SECTION ADDED --><section class="section" id="faq">
-<div class="container"><div class="section-head"><span class="eyebrow">Help & Information</span>
-
-<h2>Frequently Asked Questions</h2><p>
+</div>
+</div>
+</section><!-- FAQ SECTION --><section class="section" id="faq">
+<div class="container"><div class="section-head">
+<span class="eyebrow">Help & Information</span><h2>Frequently Asked Questions</h2><p>
 Have questions about TubePilot, its AI tools, YouTube workflow or founder?
 Explore our frequently asked questions for helpful information.
 </p><a class="btn btn-primary btn-lg" href="faq.html">
 Explore All FAQs →
-</a></div></div>
+</a></div>
+</div>
 </section><!-- CONTACT SECTION --><section class="section" style="padding-top:0">
-<div class="container"><div class="section-head"><span class="eyebrow">Questions?</span>
-
-<h2>Need help with TubePilot?</h2><p>
+<div class="container"><div class="section-head">
+<span class="eyebrow">Questions?</span><h2>Need help with TubePilot?</h2><p>
 For account, billing, product or partnership questions, contact our support team.
 </p><a class="btn btn-primary btn-lg" href="mailto:support@tubepilot.shop">
 support@tubepilot.shop
-</a></div></div>
-</section></main><!-- FOOTER --><footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="index.html">
+</a></div>
+</div>
+</section></main><!-- FOOTER --><footer class="site-footer">
+<div class="container footer-grid"><div class="footer-brand">
+<a class="brand" href="index.html">
 <span class="mark">
 <img src="assets/logo.png" alt="TubePilot logo">
 </span>
 TubePilot
 </a><p>
 AI-powered tools for the YouTube creator workflow. Create, optimize, schedule and grow.
-</p></div><div class="footer-col"><p class="label">Explore</p><a href="about.html">About TubePilot</a>
+</p>
+</div><div class="footer-col">
+<p class="label">Explore</p><a href="about.html">About TubePilot</a>
 <a href="founder.html">Founder</a>
 <a href="faq.html">Frequently Asked Questions</a>
 <a href="features.html">Features</a>
@@ -209,18 +254,21 @@ AI-powered tools for the YouTube creator workflow. Create, optimize, schedule an
 <a href="docs.html">Documentation</a>
 <a href="blog.html">Blog</a>
 
-</div><div class="footer-col"><p class="label">Policies & Support</p><a href="contact.html">Contact</a>
+</div><div class="footer-col">
+<p class="label">Policies & Support</p><a href="contact.html">Contact</a>
 <a href="privacy.html">Privacy Policy</a>
 <a href="terms.html">Terms</a>
 <a href="refund.html">Refund Policy</a>
 <a href="delete-account.html">Delete Account</a>
 
-</div></div><div class="container footer-bottom"><span>
+</div></div><div class="container footer-bottom">
+<span>
 © <span data-year>2026</span> TubePilot. All rights reserved.
 </span><span>
 Made in India ·
 <a href="mailto:support@tubepilot.shop">support@tubepilot.shop</a>
-</span></div></footer><button class="to-top" aria-label="Back to top">↑</button>
+</span>
+</div></footer><button class="to-top" aria-label="Back to top">↑</button>
 
 <script src="js/script.js"></script></body>
 </html>
